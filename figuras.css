@@ -39,6 +39,12 @@ nav a{
     cursor: pointer;
     margin-left: 15px;
 }
+header h1{
+    text-align: center;
+}
+header p{
+    text-align: center;
+}
 form{
     display: flex;
     flex-direction: column;

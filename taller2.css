@@ -5,6 +5,9 @@ body{
     display: grid;
     align-items: center;
 }
+
+/* NavBar */
+
 nav{
     width: 100%;
     display: grid;
@@ -35,6 +38,9 @@ nav a{
     cursor: pointer;
     margin-left: 15px;
 }
+
+/* main */
+
 .main-container{
     display: grid;
     align-content: center;
@@ -44,6 +50,9 @@ nav a{
     width: max-content;
     cursor: pointer;
 }
+
+/* Titulos */
+
 header{
     border-bottom: 1px solid gray;
     box-shadow: 0px 3px 4px  gray;
@@ -55,6 +64,8 @@ header{
 .titulo p{
     text-align: center;
 }
+
+/* Formulario */
 
 form{
     display: flex;
