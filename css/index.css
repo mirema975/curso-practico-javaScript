@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+body{
+    font-family: 'PT Serif', serif;
+    display: grid;
+    align-items: center;
+}
+.main-container{
+    display: grid;
+    align-content: center;
+}
+.main-container h1{
+    text-align: center;
+}
+.main-container p{
+    text-align: center;
+}
+nav{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto ;
+}
+nav ul{
+    width: max-content;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+nav ul li{
+    cursor: pointer;
+    padding: 0 0 0 15px;
+    border-left: 1px solid bisque;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    width: max-content;
+    cursor: pointer;
+    margin-left: 15px;
+}

@@ -19,19 +19,17 @@ function agregarNumero(){
 
 }
 
-function mediaAritmetica(){
+function mediaAritmetica(numeros){
 
     let valorAcumulado = 0;
 
-    for(let i = 0; i < list.length; i++){
+    for(let i = 0; i < numeros.length; i++){
         valorAcumulado = valorAcumulado + list[i];
     }
     
-    valorAcumulado  = valorAcumulado / list.length;
+    valorAcumulado  = valorAcumulado / numeros.length;
 
     const parrafoMedia = document.getElementById("resultMediaAritmetica");
     parrafoMedia.innerText = "La media Aritmetica es " + valorAcumulado;
 
 }
-
-
