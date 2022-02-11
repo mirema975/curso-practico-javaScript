@@ -19,7 +19,7 @@
                     <a href="figuras.html">Figuras</a>
                 </li>
                 <li>
-                    <a href="promedio.html">Promedio</a>
+                    <a href="promedio.html">Calculos</a>
                 </li>
                 <li>
                     <a href="https://github.com/mirema975?tab=repositories" target=”_blank”>Repositorios</a>
@@ -27,27 +27,35 @@
             </ul>
         </nav>
         <header class="titulo">
-            <h1>Promedio</h1>
+            <h1>Calculos</h1>
             <p>Tercer taller del curso practico de JS</p>
         </header>
         <section>
-            <h2>Calcula la media aritmetica</h2>
+            <h2>Calculos</h2>
             <form action="">
                 <label for="inputLista">
                     ingresa los numeros de a uno por vez
                 </label>
-                <input type="text" id="inputLista">
+                <input type="number" id="inputLista" onkeypress="pulsar(event)">
                 <button type="button" onclick="agregarNumero()">
                     Agregar
                 </button>
-                <button type="button" onclick="mediaAritmetica()">
-                    Media
+                <button type="button" onclick="promedio(list)">
+                    Calcular promedio
+                </button>
+                <button type="button" onclick="mediana(list)">
+                    Calcular Mediana
+                </button>
+                <button type="button" onclick="moda(list)">
+                    Calcular Moda
                 </button>
                 <p id="lista"></p>
                 <p id="resultMediaAritmetica"></p>
+                <p id="resultadoMediana"></p>
+                <p id="resultadoModa"></p>
             </form>
         </section>
     </div>
-    <script src="./css/promedio.css"></script>
+    <script src="./js/promedio.js"></script>
 </body>
 </html>

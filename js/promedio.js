@@ -24,7 +24,7 @@ function mediaAritmetica(numeros){
     let valorAcumulado = 0;
 
     for(let i = 0; i < numeros.length; i++){
-        valorAcumulado = valorAcumulado + list[i];
+        valorAcumulado = valorAcumulado + numeros[i];
     }
     
     valorAcumulado  = valorAcumulado / numeros.length;
