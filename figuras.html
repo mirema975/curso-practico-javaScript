@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,16 @@
     <link rel="stylesheet" href="./css/figuras.css">
     <title>Figuras Geometricas</title>
 </head>
+
 <body>
-    <header>
+    <div class="main-container">
+
         <nav>
-            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg></a>
+            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px"
+                    fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                </svg></a>
             <ul>
                 <li>
                     <a href="taller2.html">Descuentos</a>
@@ -22,71 +29,79 @@
                     <a href="promedio.html">Calculos</a>
                 </li>
                 <li>
+                    <a href="salarios.html">Salarios</a>
+                </li>
+                <li>
                     <a href="https://github.com/mirema975?tab=repositories" target=”_blank”>Repositorios</a>
                 </li>
             </ul>
         </nav>
-        <h1>
-            Figuras Geometricas
-        </h1>
-        <p>Primer taller del curso practico de JS</p>
-    </header>
+        <header class="titulo">
 
-    <section>
-        <h2>Calcula el area y perimetro de un cuadrado</h2>
-        <form action="">
-            <label for="InputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado
-            </label>
-            <input id="InputCuadrado" type="number" />
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perimetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular el area
-            </button>
-        </form>
-    </section>
-    <section>
-        <h2>Calcula el area y perimetro de un Triangulo</h2>
-        <form action="">
-            <label for="InputLado1">
-                Ingresa cuanto mide el primer lado
-            </label>
-            <input id="InputLado1" type="number" />
-            <label for="InputLado2">
-                Ingresa cuando mide el segundo lado
-            </label>
-            <input id="InputLado2" type="number" />
-            <label for="InputBase">
-                Ingresa cuando mide la base
-            </label>
-            <input id="InputBase" type="number" />
-            <button type="button" onclick="calcularPerimetroTriangulo()">
-                Calcular el perimetro
-            </button>
-            <button type="button" onclick="calcularAreaTriangulo()">
-                Calcular el area
-            </button>
-        </form>
-    </section>
-    
-    <section>
-        <h2>Calcula el area y perimetro de un Circulo</h2>
-        <form action="">
-            <label for="InputRadio">
-                Escribe cuanto mide el radio del circulo
-            </label>
-            <input id="InputRadio" type="number" />
-            <button type="button" onclick="calcularDiametroCirculo()">
-                Calcular el diametro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular el area
-            </button>
-        </form>
-    </section>
-    <script src="./js/figuras.js">
-    </script>
+            <h1>
+                Figuras Geometricas
+            </h1>
+            <p>Primer taller del curso practico de JS</p>
+
+        </header>
+
+        <section>
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+            <form action="">
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado
+                </label>
+                <input id="InputCuadrado" type="number" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el area
+                </button>
+            </form>
+        </section>
+        <section>
+            <h2>Calcula el area y perimetro de un Triangulo</h2>
+            <form action="">
+                <label for="InputLado1">
+                    Ingresa cuanto mide el primer lado
+                </label>
+                <input id="InputLado1" type="number" />
+                <label for="InputLado2">
+                    Ingresa cuando mide el segundo lado
+                </label>
+                <input id="InputLado2" type="number" />
+                <label for="InputBase">
+                    Ingresa cuando mide la base
+                </label>
+                <input id="InputBase" type="number" />
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el area
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calcula el area y perimetro de un Circulo</h2>
+            <form action="">
+                <label for="InputRadio">
+                    Escribe cuanto mide el radio del circulo
+                </label>
+                <input id="InputRadio" type="number" />
+                <button type="button" onclick="calcularDiametroCirculo()">
+                    Calcular el diametro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el area
+                </button>
+            </form>
+        </section>
+        <script src="./js/figuras.js">
+        </script>
+    </div>
 </body>
+
 </html>

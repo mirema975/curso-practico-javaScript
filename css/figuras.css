@@ -5,10 +5,9 @@ body{
     display: grid;
     align-items: center;
 }
-.main-container{
-    display: grid;
-    align-content: center;
-}
+
+/* NavBar */
+
 nav{
     width: 100%;
     display: grid;
@@ -39,12 +38,35 @@ nav a{
     cursor: pointer;
     margin-left: 15px;
 }
-header h1{
+
+/* main */
+
+.main-container{
+    display: grid;
+    align-content: center;
+}
+
+.main-container a{
+    width: max-content;
+    cursor: pointer;
+}
+
+/* Titulos */
+
+header{
+    border-bottom: 1px solid gray;
+    box-shadow: 0px 3px 4px  gray;
+}
+
+.titulo h1{
     text-align: center;
 }
-header p{
+.titulo p{
     text-align: center;
 }
+
+/* Formulario */
+
 form{
     display: flex;
     flex-direction: column;
