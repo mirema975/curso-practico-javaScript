@@ -1,11 +1,15 @@
 let datos;
 function verDatosIngresados(a) {
 
-    if (!(a.length === 0)) {
+    if (a.length != 0) {
+
+        let personas = "";
+        a.forEach(persona => {
+            personas = personas.concat(`${persona.name} ${persona.salario}
+            `)
+        });
         return document.getElementById("labelSalarios")
-        .innerText = "Los datos ingresados son: \n" + a.map(a => {
-            return String(a.name + ": $" + a.salario + "\n").replace(/,/g,"");
-        })
+            .innerText = "Los datos ingresados son: \n" + personas;
     }
 }
 
